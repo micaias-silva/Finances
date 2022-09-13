@@ -5,12 +5,14 @@ interface GlobalStyleProps {
   children: ReactNode;
 }
 
-export const Wrapper = styled("div", {
+export const Wrapper = {
   minHeight: "100vh",
-});
+  background: "$grey1",
+};
 
 export const Flex = styled("div", {
   display: "flex",
+  // maxWidth: "100%",
   alignItems: "center",
   gap: "$1",
 });
@@ -48,8 +50,45 @@ export const GlobalStyles: React.FC<GlobalStyleProps> = ({ children }) => {
 export const Container = styled("div", {
   margin: "0 auto",
   padding: "0 1rem",
-  // maxWidth: "$container",
-  // "@mobile": {
-  //   maxWidth: "$containerMobile",
-  // },
+  maxWidth: "$container",
+  display: "block",
+  "@mobile": {
+    maxWidth: "$containerMobile",
+  },
+  variants: {
+    type: {
+      full: {
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        width: "50vw",
+        maxWidth: "50vw",
+        minHeight: "100vh",
+        "@mobile": {
+          margin: 0,
+          minWidth: "100%",
+        },
+      },
+    },
+    disappearsOn: {
+      mobile: {
+        "@mobile": {
+          display: "none",
+        },
+      },
+    },
+  },
+});
+
+export const ImgFrame = styled("figure", {
+  textAlign: "center",
+  minWidth: "100%",
+});
+
+export const Img = styled("img", {
+  maxWidth: "20rem",
+  "@laptop": {
+    maxWidth: "30rem",
+    transition: "0.4s",
+  },
 });
