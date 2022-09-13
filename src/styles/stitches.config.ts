@@ -4,13 +4,15 @@ export const { styled, globalCss } = createStitches({
   theme: {
     colors: {
       grey1: "#212529",
-      grey2: "#868e96",
-      grey3: "#d4d4d4",
+      grey2: "#121618",
+      grey3: "#43434a",
       white: "#f8f9fa",
       primary: "#fd337e",
     },
     fontSizes: {
+      small: "0.875rem",
       regular: "1rem",
+      large: "1.25rem",
       text1: "1.5rem",
       text2: "2rem",
     },
@@ -20,7 +22,7 @@ export const { styled, globalCss } = createStitches({
     },
     sizes: {
       container: "75rem",
-      containerMobile: "40",
+      containerMobile: "40rem",
     },
     space: {
       1: "0.5rem",
@@ -32,6 +34,6 @@ export const { styled, globalCss } = createStitches({
   media: {
     mobile: "(max-width: 767px)",
     tablet: "(min-width: 768px)",
-    laptop: "(min-width: 1024)",
+    laptop: "(min-width: 1024px)",
   },
 });
