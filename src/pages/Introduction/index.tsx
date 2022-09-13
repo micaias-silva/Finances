@@ -1,8 +1,8 @@
 import { Button } from "../../styles/Buttons";
-import { Container } from "../../styles/Global";
+import { Container, Img, ImgFrame } from "../../styles/Global";
 import { Logo, Text } from "../../styles/Text";
 import cardSVG from "../../assets/homecard.svg";
-import { HomeCard, IntroWrapper, Section } from "./style";
+import { IntroWrapper, Section } from "./style";
 import { useHistory } from "react-router-dom";
 
 const Introduction = () => {
@@ -21,10 +21,10 @@ const Introduction = () => {
           </Button>
         </Section>
       </Container>
-      <Container>
-        <HomeCard>
-          <img src={cardSVG} alt="" />
-        </HomeCard>
+      <Container disappearsOn={"mobile"}>
+        <ImgFrame>
+          <Img src={cardSVG} />
+        </ImgFrame>
       </Container>
     </IntroWrapper>
   );

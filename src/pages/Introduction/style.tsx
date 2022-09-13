@@ -1,10 +1,8 @@
-import { Container } from "../../styles/Global";
+import { Container, Wrapper } from "../../styles/Global";
 import { styled } from "../../styles/stitches.config";
 
 export const IntroWrapper = styled("main", {
-  width: "100%",
-  minHeight: "100vh",
-  background: "$grey1",
+  ...Wrapper,
   display: "flex",
   alignItems: "center",
   justifyContent: "space-around",
@@ -17,14 +15,5 @@ export const Section = styled("section", {
   },
   "@mobile": {
     maxWidth: "100%",
-  },
-});
-
-export const HomeCard = styled("figure", {
-  "@mobile": {
-    display: "none",
-  },
-  "& img": {
-    maxWidth: "30rem",
   },
 });
