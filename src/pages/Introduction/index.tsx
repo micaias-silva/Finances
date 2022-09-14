@@ -16,7 +16,7 @@ const Introduction = () => {
             Centralize o controle das suas finanças
           </Text>
           <Text color="white">de forma rápida e segura</Text>
-          <Button onClick={() => history.push("/login")} type="fullSize">
+          <Button onClick={() => history.push("/login")} shape="fullSize">
             Começar
           </Button>
         </Section>
