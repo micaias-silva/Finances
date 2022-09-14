@@ -2,7 +2,8 @@ import { colors } from "./Global";
 import { styled } from "./stitches.config";
 
 export const Button = styled("button", {
-  padding: "0 4rem",
+  padding: "0 $2",
+  width: "fit-content",
   height: "2rem",
   border: "2px solid transparent",
   borderRadius: 5,
@@ -14,7 +15,7 @@ export const Button = styled("button", {
     filter: "brightness(0.8)",
   },
   variants: {
-    type: {
+    shape: {
       circle: {
         borderRadius: 9999,
       },
