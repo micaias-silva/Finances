@@ -4,6 +4,8 @@ import { Route, Switch } from "react-router-dom";
 import Introduction from "./pages/Introduction";
 import { Wrapper } from "./styles/Global";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
@@ -11,11 +13,15 @@ function App() {
       <Route exact path="/">
         <Introduction />
       </Route>
-      <Route exact path="/home"></Route>
+      <Route exact path="/dashboard">
+        <Dashboard />
+      </Route>
       <Route exact path="/login">
         <Login />
       </Route>
-      <Route exact path="/register"></Route>
+      <Route exact path="/register">
+        <Register />
+      </Route>
     </Switch>
   );
 }
