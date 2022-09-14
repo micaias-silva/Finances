@@ -47,6 +47,12 @@ export const Text = styled("p", {
 
 export const Link = styled("a", {
   ...textBaseStyles,
+  fontWeight: "600",
+  textDecoration: "none",
+  cursor: "pointer",
+  "&:hover": {
+    textDecoration: "underline",
+  },
   variants: {
     ...colors,
   },
