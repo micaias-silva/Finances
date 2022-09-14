@@ -13,7 +13,7 @@ export const FormSection = styled("section", {
   [`& ${Heading}`]: {
     textAlign: "center",
   },
-  width: "100%",
+  width: "70%",
   // margin: "0 auto",
   "@mobile": {
     maxWidth: 425,
