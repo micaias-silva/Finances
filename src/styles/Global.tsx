@@ -25,6 +25,13 @@ export const colors = {
     white: { color: "$white" },
     primary: { color: "$primary" },
   },
+  background: {
+    grey1: { background: "$grey1" },
+    grey2: { background: "$grey2" },
+    grey3: { background: "$grey3" },
+    white: { background: "$white" },
+    primary: { background: "$primary" },
+  },
 };
 
 export const globalStyles = globalCss({
