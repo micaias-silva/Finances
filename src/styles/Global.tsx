@@ -12,7 +12,6 @@ export const Wrapper = {
 
 export const Flex = styled("div", {
   display: "flex",
-  // maxWidth: "100%",
   alignItems: "center",
   gap: "$1",
 });
