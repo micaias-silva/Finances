@@ -17,11 +17,22 @@ export const Button = styled("button", {
   variants: {
     shape: {
       circle: {
+        fontSize: "$small",
         borderRadius: 9999,
       },
       fullSize: {
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
         width: "100%",
         height: "3rem",
+      },
+    },
+    disappearsOn: {
+      tablet: {
+        "@tablet": {
+          display: "none",
+        },
       },
     },
     ...colors,
