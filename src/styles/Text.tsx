@@ -50,9 +50,6 @@ export const Link = styled("a", {
   fontWeight: "600",
   textDecoration: "none",
   cursor: "pointer",
-  "&:hover": {
-    textDecoration: "underline",
-  },
   variants: {
     ...colors,
   },
